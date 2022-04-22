@@ -1,0 +1,130 @@
+/* pages/home-pay/index.wxss */
+.pay-wrapper {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #f3f5f7;
+  background-color: #faf9f9;
+}
+
+.pay-money,
+.pay-type .type,
+.footer{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.pay-money,
+.pay-type {
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+}
+
+.pay-money {
+  padding-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.pay-money .title,
+.pay-type .title {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+
+.pay-money .money,
+.pay-type .type {
+  display: flex;
+  margin-top: 30rpx;
+  align-items: center;
+}
+
+.pay-money .money .symbol {
+  font-size: 38rpx;
+  margin-right: 20rpx;
+}
+
+.pay-money .money .input {
+  height: 70rpx;
+}
+
+/* 支付方式 */
+.pay-type .title {
+  display: block;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #faf9f9;
+}
+
+.pay-type {
+  height: 220rpx;
+}
+
+.pay-type .type .radio {
+  margin-right: 20rpx;
+}
+
+.type .wei-xin {
+  display: flex;
+  align-items: center;
+}
+
+.type .wei-xin .icon-wrapper {
+  display: grid;
+  place-items: center;
+
+  margin-right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #28c445;
+  border-radius: 50%;
+}
+
+.type .wei-xin .icon {
+  width: 60rpx;
+}
+
+.type .wei-xin .explain {
+  display: flex;
+  flex-direction: column;
+}
+
+.wei-xin .explain .name {
+  font-size: 36rpx;
+}
+
+.wei-xin .explain .desc {
+  color: #9f9f9f;
+  font-size: 24rpx;
+}
+
+.footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .pay {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2f6bfc;
+  border-radius: 30px;
+}
+
+.footer .pay {
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.footer .explain {
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  color: #969696;
+}

@@ -1,0 +1,9 @@
+<!-- pages/home-profile/index.wxml -->
+<view class="container">
+  <view class="user-info">
+    <image class="avatar" src="{{ userInfo.avatarUrl }}"></image>
+    <text class="nickname">{{ userInfo.nickName }}</text>
+  </view>
+  <button wx:if="{{ !hasToken }}" bindtap="loginAuth">授权登录</button>
+  <button wx:else bindtap="handleToPay">支付</button>
+</view>
